@@ -14,15 +14,16 @@ const Wrap = styled.div`
 const Work = () => {
   const getImg = (img) => {
     // eslint-disable-next-line global-require,import/no-dynamic-require
-    return require(`../assets/images/${img}`);
+    const image = require(`../assets/images/${img}`);
+    return image.default;
   };
 
-  const workOutput = projects.map(({ title, image, name, description, build, live, repo }) => {
+  const workOutput = projects.map(({ title, image, description, build, live, repo }) => {
     return (
       <Project
         key={title}
         image={getImg(image)}
-        alt={`${name} mockup image`}
+        alt={`${title} mockup image`}
         title={title}
         description={description}
         build={build}
