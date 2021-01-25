@@ -31,3 +31,4 @@ yarn-error.log*
 
 # ignore all local history of files
 **/.history
+.eslintcache

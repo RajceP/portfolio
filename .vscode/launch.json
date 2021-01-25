@@ -4,12 +4,12 @@
     {
       "name": "Chrome",
       "type": "pwa-chrome",
+      "runtimeExecutable": "/Applications/Google Chrome Dev.app/Contents/MacOS/Google Chrome Dev",
       "preLaunchTask": "npm: start",
       "postDebugTask": "npm stop",
       "request": "launch",
       "url": "http://localhost:3000",
       "webRoot": "${workspaceFolder}/src",
-      "userDataDir": false,
       "sourceMapPathOverrides": {
         "webpack:///src/*": "${webRoot}/*"
       }
