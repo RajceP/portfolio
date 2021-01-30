@@ -1,9 +1,7 @@
 /* eslint-disable camelcase */
-import React, { useEffect, useState } from 'react';
-
 import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-
 import GitHubCard from '../components/GitHubCard';
 import Anchor from '../components/UI/Anchor';
 import Title from '../components/UI/Title';
@@ -79,19 +77,17 @@ const GitHub = () => {
         <Title>{'{ gitHub }'}</Title>
         <Cont>
           {data.ghData.map(
-            ({ node_id, full_name, html_url, language, stargazers_count, watchers_count }) => {
-              return (
-                <GitHubCard
-                  key={node_id}
-                  link={html_url}
-                  language={language}
-                  stars={stargazers_count}
-                  watches={watchers_count}
-                >
-                  {full_name}
-                </GitHubCard>
-              );
-            },
+            ({ node_id, full_name, html_url, language, stargazers_count, watchers_count }) => (
+              <GitHubCard
+                key={node_id}
+                link={html_url}
+                language={language}
+                stars={stargazers_count}
+                watches={watchers_count}
+              >
+                {full_name}
+              </GitHubCard>
+            ),
           )}
         </Cont>
       </>

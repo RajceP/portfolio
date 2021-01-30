@@ -1,6 +1,5 @@
-import React from 'react';
-
 import PropTypes from 'prop-types';
+import React from 'react';
 import styled from 'styled-components';
 
 const StyledButton = styled.button`
@@ -27,13 +26,11 @@ const StyledButton = styled.button`
   }
 `;
 
-const Button = ({ link, children }) => {
-  return (
-    <a href={link} rel="noopener noreferrer" target="_blank">
-      <StyledButton>{children}</StyledButton>
-    </a>
-  );
-};
+const Button = ({ link, children }) => (
+  <a href={link} rel="noopener noreferrer" target="_blank">
+    <StyledButton>{children}</StyledButton>
+  </a>
+);
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,

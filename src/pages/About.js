@@ -1,7 +1,5 @@
 import React from 'react';
-
 import styled from 'styled-components';
-
 import Anchor from '../components/UI/Anchor';
 import Title from '../components/UI/Title';
 
@@ -41,28 +39,26 @@ const HandEmoji = styled.span`
   }
 `;
 
-const About = () => {
-  return (
-    <>
-      <Anchor id="about" />
-      <Title>{'{ about }'}</Title>
-      <Wrap>
-        <h1>
-          Hello, I&apos;m Petr Rajtslegr&nbsp;
-          {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
-          <HandEmoji role="img" aria-label="Waving hand">
-            👋
-          </HandEmoji>
-        </h1>
-        <h3>
-          I am developer based in Prague, Czech Republic and I love to create things&nbsp;
-          <span role="img" aria-label="Smile">
-            🙂
-          </span>
-        </h3>
-      </Wrap>
-    </>
-  );
-};
+const About = () => (
+  <>
+    <Anchor id="about" />
+    <Title>{'{ about }'}</Title>
+    <Wrap>
+      <h1>
+        Hello, I&apos;m Petr Rajtslegr&nbsp;
+        {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
+        <HandEmoji role="img" aria-label="Waving hand">
+          👋
+        </HandEmoji>
+      </h1>
+      <h3>
+        I am developer based in Prague, Czech Republic and I love to create things&nbsp;
+        <span role="img" aria-label="Smile">
+          🙂
+        </span>
+      </h3>
+    </Wrap>
+  </>
+);
 
 export default About;

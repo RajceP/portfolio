@@ -1,7 +1,5 @@
 import React from 'react';
-
 import styled from 'styled-components';
-
 import projects from '../assets/projects.json';
 import Project from '../components/Project';
 import Anchor from '../components/UI/Anchor';
@@ -18,20 +16,18 @@ const Work = () => {
     return image.default;
   };
 
-  const workOutput = projects.map(({ title, image, description, build, live, repo }) => {
-    return (
-      <Project
-        key={title}
-        image={getImg(image)}
-        alt={`${title} mockup image`}
-        title={title}
-        description={description}
-        build={build}
-        live={live}
-        repo={repo}
-      />
-    );
-  });
+  const workOutput = projects.map(({ title, image, description, build, live, repo }) => (
+    <Project
+      key={title}
+      image={getImg(image)}
+      alt={`${title} mockup image`}
+      title={title}
+      description={description}
+      build={build}
+      live={live}
+      repo={repo}
+    />
+  ));
 
   return (
     <>

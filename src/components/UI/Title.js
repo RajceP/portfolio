@@ -1,6 +1,5 @@
-import React from 'react';
-
 import PropTypes from 'prop-types';
+import React from 'react';
 import styled from 'styled-components';
 
 const StyledTitle = styled.h1`
@@ -9,9 +8,7 @@ const StyledTitle = styled.h1`
   margin-bottom: 1.6rem;
 `;
 
-const Title = ({ children }) => {
-  return <StyledTitle>{children}</StyledTitle>;
-};
+const Title = ({ children }) => <StyledTitle>{children}</StyledTitle>;
 
 Title.propTypes = {
   children: PropTypes.node.isRequired,

@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
 import styled from 'styled-components';
-
 import Facebook from '../assets/icons/facebook.svg';
 import Github from '../assets/icons/github.svg';
 import Instagram from '../assets/icons/instagram.svg';

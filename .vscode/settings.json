@@ -12,12 +12,11 @@
   "files.associations": {
     "*.js": "javascriptreact"
   },
-  "peacock.color": "#221a36",
-  "peacock.remoteColor": "#61dafb",
   "workbench.colorCustomizations": {
     "titleBar.activeBackground": "#221a36",
     "titleBar.activeForeground": "#e7e7e7",
     "titleBar.inactiveBackground": "#221a3699",
     "titleBar.inactiveForeground": "#e7e7e799"
-  }
+  },
+  "peacock.color": "#221a36"
 }

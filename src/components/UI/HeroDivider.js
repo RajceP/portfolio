@@ -1,5 +1,4 @@
 import React from 'react';
-
 import styled from 'styled-components';
 
 const StyledHr = styled.hr`
@@ -21,8 +20,6 @@ const StyledHr = styled.hr`
   }
 `;
 
-const HeroDivider = () => {
-  return <StyledHr />;
-};
+const HeroDivider = () => <StyledHr />;
 
 export default HeroDivider;

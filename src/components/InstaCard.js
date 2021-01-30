@@ -1,6 +1,5 @@
-import React from 'react';
-
 import PropTypes from 'prop-types';
+import React from 'react';
 import styled from 'styled-components';
 
 const Card = styled.div`
@@ -74,23 +73,21 @@ const Text = styled.div`
   text-align: center;
 `;
 
-const InstaCard = ({ cardData: { img, likes, link } }) => {
-  return (
-    <Card>
-      <a href={link} rel="noopener noreferrer" target="_blank">
-        <Img src={img} alt="Instagram photo" />
-        <Hover>
-          <Text>
-            <span role="img" aria-label="Heart Emoji">
-              🤍
-            </span>
-            {likes}
-          </Text>
-        </Hover>
-      </a>
-    </Card>
-  );
-};
+const InstaCard = ({ cardData: { img, likes, link } }) => (
+  <Card>
+    <a href={link} rel="noopener noreferrer" target="_blank">
+      <Img src={img} alt="Instagram photo" />
+      <Hover>
+        <Text>
+          <span role="img" aria-label="Heart Emoji">
+            🤍
+          </span>
+          {likes}
+        </Text>
+      </Hover>
+    </a>
+  </Card>
+);
 
 InstaCard.propTypes = {
   cardData: PropTypes.shape({

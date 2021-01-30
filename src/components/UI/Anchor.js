@@ -1,6 +1,5 @@
-import React from 'react';
-
 import PropTypes from 'prop-types';
+import React from 'react';
 import styled from 'styled-components';
 
 const SyledAnchor = styled.a`
@@ -14,9 +13,7 @@ const SyledAnchor = styled.a`
   }
 `;
 
-const Anchor = ({ id }) => {
-  return <SyledAnchor id={id} />;
-};
+const Anchor = ({ id }) => <SyledAnchor id={id} />;
 
 Anchor.propTypes = {
   id: PropTypes.string.isRequired,

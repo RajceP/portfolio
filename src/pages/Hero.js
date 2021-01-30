@@ -1,8 +1,6 @@
 import React from 'react';
-
 import Particles from 'react-tsparticles';
 import styled from 'styled-components';
-
 import Angular from '../assets/icons/angular.svg';
 import Css3 from '../assets/icons/css3.svg';
 import Html5 from '../assets/icons/html5.svg';
@@ -95,46 +93,44 @@ const Icon = styled.img`
   }
 `;
 
-const Hero = () => {
-  return (
-    <Cont>
-      <HeroPic src={heroImg} alt="Hero Photo" />
-      <IconsList>
-        <Ul>
-          <Li>
-            <Icon src={Html5} alt="HTML5 Icon" />
-          </Li>
-          <Li>
-            <Icon src={Css3} alt="CSS3 Icon" />
-          </Li>
-          <Li>
-            <Icon src={JavaScript} alt="JavaScript Icon" />
-          </Li>
-          <Li>
-            <Icon src={TypeScript} alt="TypeScript Icon" />
-          </Li>
-        </Ul>
-        <Ul>
-          <Li>
-            <Icon src={ReactSvg} alt="React Icon" />
-          </Li>
-          <Li>
-            <Icon src={Angular} alt="Angular Icon" />
-          </Li>
-          <Li>
-            <Icon src={NodeJs} alt="Node.js Icon" />
-          </Li>
-          <Li>
-            <Icon src={Mongo} alt="MySQL Icon" />
-          </Li>
-        </Ul>
-      </IconsList>
-      <Particles
-        params={particlesParams}
-        style={{ position: 'absolute', zIndex: '-1', top: '0', left: '0' }}
-      />
-    </Cont>
-  );
-};
+const Hero = () => (
+  <Cont>
+    <HeroPic src={heroImg} alt="Hero Photo" />
+    <IconsList>
+      <Ul>
+        <Li>
+          <Icon src={Html5} alt="HTML5 Icon" />
+        </Li>
+        <Li>
+          <Icon src={Css3} alt="CSS3 Icon" />
+        </Li>
+        <Li>
+          <Icon src={JavaScript} alt="JavaScript Icon" />
+        </Li>
+        <Li>
+          <Icon src={TypeScript} alt="TypeScript Icon" />
+        </Li>
+      </Ul>
+      <Ul>
+        <Li>
+          <Icon src={ReactSvg} alt="React Icon" />
+        </Li>
+        <Li>
+          <Icon src={Angular} alt="Angular Icon" />
+        </Li>
+        <Li>
+          <Icon src={NodeJs} alt="Node.js Icon" />
+        </Li>
+        <Li>
+          <Icon src={Mongo} alt="MySQL Icon" />
+        </Li>
+      </Ul>
+    </IconsList>
+    <Particles
+      params={particlesParams}
+      style={{ position: 'absolute', zIndex: '-1', top: '0', left: '0' }}
+    />
+  </Cont>
+);
 
 export default Hero;

@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
-import React from 'react';
-
 import PropTypes from 'prop-types';
+import React from 'react';
 import styled from 'styled-components';
 
 const StyledCard = styled.div`
@@ -27,31 +26,29 @@ const StyledEmoji = styled.span`
   margin: 0 4px;
 `;
 
-const GitHubCard = ({ children, link, language, stars, watches }) => {
-  return (
-    <StyledCard>
-      <a href={link} rel="noopener noreferrer" target="_blank">
-        <h3>
-          <StyledDocumentEmoji role="img" aria-label="Document emoji">
-            📄
-          </StyledDocumentEmoji>
-          <span>{children}</span>
-        </h3>
-        <span>{language}</span>
-        <StyledCounters>
-          <StyledEmoji role="img" aria-label="Star emoji">
-            ⭐
-          </StyledEmoji>
-          <span>{stars}</span>
-          <StyledEmoji role="img" aria-label="Eye emoji">
-            👁️
-          </StyledEmoji>
-          <span>{watches}</span>
-        </StyledCounters>
-      </a>
-    </StyledCard>
-  );
-};
+const GitHubCard = ({ children, link, language, stars, watches }) => (
+  <StyledCard>
+    <a href={link} rel="noopener noreferrer" target="_blank">
+      <h3>
+        <StyledDocumentEmoji role="img" aria-label="Document emoji">
+          📄
+        </StyledDocumentEmoji>
+        <span>{children}</span>
+      </h3>
+      <span>{language}</span>
+      <StyledCounters>
+        <StyledEmoji role="img" aria-label="Star emoji">
+          ⭐
+        </StyledEmoji>
+        <span>{stars}</span>
+        <StyledEmoji role="img" aria-label="Eye emoji">
+          👁️
+        </StyledEmoji>
+        <span>{watches}</span>
+      </StyledCounters>
+    </a>
+  </StyledCard>
+);
 
 GitHubCard.propTypes = {
   children: PropTypes.string.isRequired,

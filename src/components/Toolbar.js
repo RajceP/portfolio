@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Headroom from 'react-headroom';
 import styled from 'styled-components';
 
@@ -90,35 +89,33 @@ const Li = styled.li`
   }
 `;
 
-const Toolbar = () => {
-  return (
-    <Headroom>
-      <Bar>
-        <Title>
-          <a href="#root">{'{ petr.rajtslegr }'}</a>
-        </Title>
-        <Nav>
-          <Ul>
-            <Li>
-              <a href="#about">{'{ about }'}</a>
-            </Li>
-            <Li>
-              <a href="#instagram">{'{ instagram }'}</a>
-            </Li>
-            <Li>
-              <a href="#projects">{'{ projects }'}</a>
-            </Li>
-            <Li>
-              <a href="#github">{'{ gitHub }'}</a>
-            </Li>
-            <Li>
-              <a href="#contact">{'{ contact }'}</a>
-            </Li>
-          </Ul>
-        </Nav>
-      </Bar>
-    </Headroom>
-  );
-};
+const Toolbar = () => (
+  <Headroom>
+    <Bar>
+      <Title>
+        <a href="#root">{'{ petr.rajtslegr }'}</a>
+      </Title>
+      <Nav>
+        <Ul>
+          <Li>
+            <a href="#about">{'{ about }'}</a>
+          </Li>
+          <Li>
+            <a href="#instagram">{'{ instagram }'}</a>
+          </Li>
+          <Li>
+            <a href="#projects">{'{ projects }'}</a>
+          </Li>
+          <Li>
+            <a href="#github">{'{ gitHub }'}</a>
+          </Li>
+          <Li>
+            <a href="#contact">{'{ contact }'}</a>
+          </Li>
+        </Ul>
+      </Nav>
+    </Bar>
+  </Headroom>
+);
 
 export default Toolbar;

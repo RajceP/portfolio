@@ -1,8 +1,6 @@
-import React from 'react';
-
 import PropTypes from 'prop-types';
+import React from 'react';
 import styled from 'styled-components';
-
 import Footer from '../../components/Footer';
 import Toolbar from '../../components/Toolbar';
 
@@ -28,15 +26,13 @@ const Main = styled.main`
   }
 `;
 
-const WithLayout = ({ children }) => {
-  return (
-    <View>
-      <Toolbar />
-      <Main>{children}</Main>
-      <Footer />
-    </View>
-  );
-};
+const WithLayout = ({ children }) => (
+  <View>
+    <Toolbar />
+    <Main>{children}</Main>
+    <Footer />
+  </View>
+);
 
 WithLayout.propTypes = {
   children: PropTypes.node.isRequired,

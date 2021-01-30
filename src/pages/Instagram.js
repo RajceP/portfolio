@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from 'react';
-
 import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-
 import InstaCard from '../components/InstaCard';
 import Anchor from '../components/UI/Anchor';
 import Title from '../components/UI/Title';
@@ -53,13 +51,11 @@ const Instagram = () => {
     getData();
   });
 
-  const prepareProps = (i) => {
-    return {
-      img: data.igData[i].node.thumbnail_src,
-      link: `https://www.instagram.com/p/${data.igData[i].node.shortcode}`,
-      likes: data.igData[i].node.edge_media_preview_like.count,
-    };
-  };
+  const prepareProps = (i) => ({
+    img: data.igData[i].node.thumbnail_src,
+    link: `https://www.instagram.com/p/${data.igData[i].node.shortcode}`,
+    likes: data.igData[i].node.edge_media_preview_like.count,
+  });
 
   let instagramOutput = <Text>Loading Instagram post.</Text>;
 
